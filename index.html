@@ -346,6 +346,23 @@
     .timer div{width:80px}
   }
 </style>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1718157489881548');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1718157489881548&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 </head>
 <body>
 
@@ -843,8 +860,20 @@
     vip:       '#', // Plano VIP — US$ 12
     vipOferta: '#'  // Oferta do pop-up — VIP por US$ 9,90 (criar essa oferta na Hotmart)
   };
+  // Valores enviados ao Meta Pixel no InitiateCheckout
+  var OFERTA = {
+    basico:    { value: 7,    name: 'Plan Basico' },
+    vip:       { value: 12,   name: 'Plan VIP Completo' },
+    vipOferta: { value: 9.90, name: 'Plan VIP Completo (oferta pop-up)' }
+  };
   document.querySelectorAll('[data-checkout]').forEach(function(a){
-    a.href = CHECKOUT[a.dataset.checkout];
+    var k = a.dataset.checkout;
+    a.href = CHECKOUT[k];
+    a.addEventListener('click', function(){
+      // o botão do Básico só abre o pop-up; o evento sai quando a pessoa realmente vai ao checkout
+      if (a.id === 'btn-basico') return;
+      if (window.fbq) fbq('track', 'InitiateCheckout', { value: OFERTA[k].value, currency: 'USD', content_name: OFERTA[k].name });
+    });
   });
 
   // Pop-up: clicar no Básico abre a oferta de upgrade
