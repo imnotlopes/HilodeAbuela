@@ -861,10 +861,12 @@ src="https://www.facebook.com/tr?id=1718157489881548&ev=PageView&noscript=1"
 <script>
   // LINKS DE CHECKOUT DA HOTMART — trocar os "#" pelos links reais
   var CHECKOUT = {
-    basico:    '#', // Plano Básico — US$ 7
-    vip:       '#', // Plano VIP — US$ 12
-    vipOferta: '#'  // Oferta do pop-up — VIP por US$ 9,90 (criar essa oferta na Hotmart)
+    basico:    'https://pay.hotmart.com/L108132317S', // Plano Básico — US$ 7
+    vip:       'https://pay.hotmart.com/Q108158935O', // Plano VIP — US$ 12
+    vipOferta: '#'  // Oferta do pop-up — VIP por US$ 9,90 (colar o link aqui; enquanto for '#', o pop-up fica desligado)
   };
+  // O pop-up só aparece quando o link da oferta de US$ 9,90 estiver preenchido
+  var POPUP_ATIVO = CHECKOUT.vipOferta && CHECKOUT.vipOferta !== '#';
   // Valores enviados ao Meta Pixel no InitiateCheckout
   var OFERTA = {
     basico:    { value: 7,    name: 'Plan Basico' },
@@ -875,14 +877,15 @@ src="https://www.facebook.com/tr?id=1718157489881548&ev=PageView&noscript=1"
     var k = a.dataset.checkout;
     a.href = CHECKOUT[k];
     a.addEventListener('click', function(){
-      // o botão do Básico só abre o pop-up; o evento sai quando a pessoa realmente vai ao checkout
-      if (a.id === 'btn-basico') return;
+      // com o pop-up ligado, o botão do Básico só abre o pop-up; o evento sai quando a pessoa realmente vai ao checkout
+      if (a.id === 'btn-basico' && POPUP_ATIVO) return;
       if (window.fbq) fbq('track', 'InitiateCheckout', { value: OFERTA[k].value, currency: 'USD', content_name: OFERTA[k].name });
     });
   });
 
   // Pop-up: clicar no Básico abre a oferta de upgrade
   (function(){
+    if (!POPUP_ATIVO) return; // sem link da oferta, o Básico vai direto ao checkout
     var modal = document.getElementById('upsell');
     var openBtn = document.getElementById('btn-basico');
     function open(e){
