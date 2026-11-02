@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hilo de Abuela | +100 Bolsos Nuevos a Crochet con Costo y Precio</title>
+<title>Hilo de Abuela | +100 Bolsos Nuevos a Crochet con Calculadora de Precio</title>
 <link rel="icon" type="image/webp" href="imagens/logo-hilo-de-abuela.webp">
-<meta name="description" content="Para la tejedora que ya sabe tejer y vende sus bolsos: 101 modelos nuevos a crochet con paso a paso interactivo, costo de materiales y precio sugerido, para no quedarte nunca sin novedad para tus clientas.">
+<meta name="description" content="Para la tejedora que ya sabe tejer y vende sus bolsos: 101 modelos nuevos a crochet con paso a paso interactivo y calculadora de precio de venta, para no quedarte nunca sin novedad para tus clientas.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800;900&family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
@@ -196,6 +196,7 @@
 
   /* ---------- Pricing ---------- */
   .pricing{background:linear-gradient(180deg,var(--cream) 0%,#f3e2cd 100%)}
+  .bf-note{font-family:'Poppins',sans-serif;font-weight:700;font-size:15px;color:var(--terra);margin-top:10px}
   .pay-once{font-size:15px;font-weight:600;color:#7a5a48;margin-top:8px}
   .plans{display:grid;grid-template-columns:1fr 1.95fr;gap:28px;max-width:1120px;margin:56px auto 0;align-items:stretch}
   .plan{position:relative;border-radius:26px;padding:28px 24px 30px}
@@ -206,6 +207,7 @@
   .plan ul li::before{content:"\2713";position:absolute;left:0;top:1px;width:21px;height:21px;border-radius:50%;border:1.5px solid #c9b6a4;color:#8a7566;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center}
   .from{font-family:'Poppins',sans-serif;font-weight:700;color:#5b4a40;font-size:15px}
   .from s{color:var(--terra);font-weight:800}
+  .off{display:inline-block;background:var(--terra);color:#fff;font-size:12px;font-weight:800;border-radius:999px;padding:2px 9px;margin-left:4px;white-space:nowrap}
   .price{display:flex;align-items:flex-end;gap:8px;margin:2px 0 4px}
   .price .cur{font-family:'Poppins',sans-serif;font-weight:900;color:var(--gold);font-size:36px;line-height:1.6}
   .price .amt{font-family:'Poppins',sans-serif;font-weight:900;color:var(--terra);font-size:84px;line-height:1;letter-spacing:-.04em}
@@ -277,7 +279,7 @@
   .urgency h2{color:#fff8ef}
   .urgency p{font-size:17px;margin-bottom:14px}
   .timer{display:flex;justify-content:center;gap:10px;margin:26px 0 40px}
-  .timer div{background:var(--cream-2);border-radius:14px;width:88px;padding:12px 0 10px;box-shadow:0 10px 24px rgba(0,0,0,.15)}
+  .timer div{background:var(--cream-2);border-radius:14px;width:80px;padding:12px 0 10px;box-shadow:0 10px 24px rgba(0,0,0,.15)}
   .timer b{display:block;font-family:'Poppins',sans-serif;font-weight:900;font-size:34px;color:var(--ink);line-height:1.1}
   .timer span{font-family:'Poppins',sans-serif;font-weight:700;font-size:11px;color:#5b4a40;text-transform:uppercase}
 
@@ -346,7 +348,9 @@
   }
   @media (max-width:520px){
     .steps{grid-template-columns:1fr}
-    .timer div{width:80px}
+    .timer{gap:8px}
+    .timer div{width:70px}
+    .timer b{font-size:28px}
   }
 </style>
 <!-- Meta Pixel Code -->
@@ -389,7 +393,7 @@ src="https://www.facebook.com/tr?id=1718157489881548&ev=PageView&noscript=1"
 <body>
 
 <!-- ===== TOPBAR ===== -->
-<div class="topbar">Oferta valida solo por hoy - <span class="today"></span></div>
+<div class="topbar">Black November: 55% off hasta el 27/11</div>
 
 <!-- ===== HERO ===== -->
 <section class="dark hero">
@@ -406,12 +410,12 @@ src="https://www.facebook.com/tr?id=1718157489881548&ev=PageView&noscript=1"
       <span>Hilo de Abuela</span>
     </div>
     <h1>Nunca Mas Te Quedes Sin un Modelo Nuevo Para <em>Vender</em></h1>
-    <p class="sub">Tu ya sabes tejer y ya tienes clientas. Lo que te roba el tiempo es buscar, todos los dias, que bolso nuevo ofrecer. Aqui tienes 101 modelos con paso a paso interactivo, costo de materiales y precio sugerido de venta.</p>
+    <p class="sub">Tu ya sabes tejer y ya tienes clientas. Lo que te roba el tiempo es buscar, todos los dias, que bolso nuevo ofrecer. Aqui tienes 101 modelos con paso a paso interactivo y una calculadora para saber cuanto cobrar por cada uno.</p>
 
     <div class="showcase">
       <div class="sc-card sc-out l"><img src="imagens/bolsas/bolsa-06.webp" alt="Bolso moderno a crochet"><span>Bolso moderno</span></div>
       <div class="sc-card sc-in l"><img src="imagens/bolsas/bolsa-16.webp" alt="Bolso de mano a crochet"><span>Bolso de mano</span></div>
-      <div class="sc-card sc-main"><img src="imagens/mockup-principal.webp" alt="101 bolsos nuevos a crochet con costo y precio" width="520" height="520" fetchpriority="high"></div>
+      <div class="sc-card sc-main"><img src="imagens/mockup-principal.webp" alt="101 bolsos nuevos a crochet con calculadora de precio" width="520" height="520" fetchpriority="high"></div>
       <div class="sc-card sc-in r"><img src="imagens/bolsas/bolsa-01.webp" alt="Cartera a crochet"><span>Cartera</span></div>
       <div class="sc-card sc-out r"><img src="imagens/bolsas/bolsa-14.webp" alt="Bolso cruzado a crochet"><span>Bolso cruzado</span></div>
     </div>
@@ -469,7 +473,7 @@ src="https://www.facebook.com/tr?id=1718157489881548&ev=PageView&noscript=1"
     </ul>
 
     <p class="ask">Hasta cuando vas a gastar buscando el tiempo que podrias usar para tejer y vender?</p>
-    <p>Con esta coleccion tienes todo reunido en un solo lugar: 101 modelos nuevos, con paso a paso interactivo, costo de materiales y precio sugerido. Eliges el bolso, ves cuanto te cuesta y sabes cuanto cobrar antes de empezar.</p>
+    <p>Con esta coleccion tienes todo reunido en un solo lugar: 101 modelos nuevos, con paso a paso interactivo, lista de materiales y calculadora de precio. Eliges el bolso, pones lo que te cuestan los materiales y tus horas, y sabes cuanto cobrar antes de empezar.</p>
     <p>Y no vendes sola: pasas a formar parte de una comunidad de tejedoras que tambien venden lo que tejen y hoy comparten sus bolsos terminados en lugar de sus busquedas.</p>
 
     <div class="btn-wrap" style="margin-top:28px"><a href="#planes" class="btn">Quiero dejar de buscar modelos</a></div>
@@ -480,18 +484,18 @@ src="https://www.facebook.com/tr?id=1718157489881548&ev=PageView&noscript=1"
 <section class="tan">
   <div class="wrap">
     <p class="eyebrow">Hecho para quien teje y vende</p>
-    <h2 class="h2">Patron, Costo y Precio en la Misma Ficha</h2>
+    <h2 class="h2">Patron, Materiales y Precio en un Solo Lugar</h2>
 
     <div class="feature-img">
       <img src="imagens/mockup-interno-receita.webp" alt="Patron de bolso a crochet con paso a paso interactivo" width="520" height="520" loading="lazy">
     </div>
 
-    <p class="body">La experiencia ya la tienes. Lo que te faltaba era un lugar con modelos nuevos, completos y con los numeros listos. Cada uno de los 101 patrones trae un paso a paso interactivo, cuanto te cuesta producirlo y un precio sugerido, para que no pierdas tiempo descifrando ni calculando y vayas directo a tejer y vender.</p>
+    <p class="body">La experiencia ya la tienes. Lo que te faltaba era un lugar con modelos nuevos, completos y una forma clara de ponerles precio. Cada uno de los 101 patrones trae paso a paso interactivo y lista de materiales, y la calculadora ya los trae cargados: pones lo que te costaron y tus horas, y ves el precio sugerido de venta.</p>
 
     <div class="features">
       <div class="feat"><h3>🆕 101 Modelos Nuevos</h3><p>Bolsos, carteras, ecobags y cruzados para que tu catalogo nunca se quede igual.</p></div>
-      <div class="feat"><h3>💰 Costo de Cada Bolso</h3><p>Cuanto gastas en hilo, asas y accesorios para producir cada pieza.</p></div>
-      <div class="feat"><h3>🏷️ Precio Sugerido</h3><p>Una referencia clara de cuanto cobrar por cada modelo.</p></div>
+      <div class="feat"><h3>💰 Materiales en la Calculadora</h3><p>Los materiales de cada modelo ya aparecen listados: solo pones cuanto te costo cada uno.</p></div>
+      <div class="feat"><h3>🏷️ Precio Sugerido</h3><p>Suma materiales, tus horas y tu ganancia, y te dice cuanto cobrar en tu moneda.</p></div>
       <div class="feat"><h3>🧶 Paso a Paso Interactivo</h3><p>Avanzas etapa por etapa, con fotos y graficos, mucho mas facil de entender.</p></div>
       <div class="feat"><h3>👜 Fotos del Resultado</h3><p>Ves el bolso terminado antes de tejerlo y ya sabes si va a gustar a tus clientas.</p></div>
       <div class="feat"><h3>🧵 Lista de Materiales</h3><p>Sabes exactamente que comprar antes de empezar, sin desperdiciar.</p></div>
@@ -504,7 +508,7 @@ src="https://www.facebook.com/tr?id=1718157489881548&ev=PageView&noscript=1"
   <div class="wrap-lg">
     <p class="eyebrow">Del modelo elegido a la venta</p>
     <h2 class="h2">Como Funciona</h2>
-    <p class="lead">Tu sabes tejer, asi que no necesitas una clase desde cero. Necesitas modelos nuevos y numeros claros. Cada uno de los 101 modelos te guia etapa por etapa, con fotos y graficos, y te dice cuanto cuesta producirlo y cuanto cobrar.</p>
+    <p class="lead">Tu sabes tejer, asi que no necesitas una clase desde cero. Necesitas modelos nuevos y numeros claros. Cada uno de los 101 modelos te guia etapa por etapa, y la calculadora te muestra cuanto cobrar con tus propios costos.</p>
 
     <div class="steps">
       <div class="step">
@@ -516,8 +520,8 @@ src="https://www.facebook.com/tr?id=1718157489881548&ev=PageView&noscript=1"
       <div class="step">
         <img src="imagens/passo-2-abra-receita.webp" alt="Paso 2: abre el patron" width="520" height="520" loading="lazy">
         <p class="num">Paso 2</p>
-        <h3>Revisa costo y precio</h3>
-        <p>Antes de tejer ya sabes cuanto te cuesta producirlo y cuanto cobrar. Ajustas los numeros a tu ciudad y listo.</p>
+        <h3>Calcula tu precio</h3>
+        <p>Pones lo que te cuestan los materiales y tus horas, en la moneda de tu pais. Antes de tejer ya sabes cuanto cobrar.</p>
       </div>
       <div class="step">
         <img src="imagens/passo-3-separe-materiais.webp" alt="Paso 3: separa los materiales" width="520" height="520" loading="lazy">
@@ -597,7 +601,7 @@ src="https://www.facebook.com/tr?id=1718157489881548&ev=PageView&noscript=1"
 <section class="dark center">
   <div class="wrap-lg">
     <p class="eyebrow">Bonos exclusivos</p>
-    <h2 class="h2" style="max-width:800px;margin-left:auto;margin-right:auto">Y Hoy Tambien Recibes Estos Bonos Exclusivos en el Plan VIP</h2>
+    <h2 class="h2" style="max-width:800px;margin-left:auto;margin-right:auto">Y en Black November Tambien Recibes Estos Bonos Exclusivos en el Plan VIP</h2>
     <p class="lead" style="color:#f2e6da">Para que cada bolso que vendas salga con terminacion de tienda y lo puedas cobrar como tal.</p>
 
     <div class="bonus-grid">
@@ -677,9 +681,10 @@ src="https://www.facebook.com/tr?id=1718157489881548&ev=PageView&noscript=1"
 <section class="pricing" id="planes">
   <div class="wrap-lg">
     <div class="center">
-      <p class="eyebrow">Escoge tu mejor opcion</p>
+      <p class="eyebrow">Black November</p>
       <h2 class="h2">Elige Tu Mejor Opcion</h2>
-      <p class="lead" style="max-width:720px">Los dos planes traen los 101 modelos con costo y precio para que nunca te falte novedad. El VIP suma los 4 bonos y el acceso de por vida.</p>
+      <p class="lead" style="max-width:720px">Los dos planes traen los 101 modelos y la calculadora de precio para que nunca te falte novedad. El VIP suma los 4 bonos y el acceso de por vida.</p>
+      <p class="bf-note">Solo por Black November, dejamos toda la coleccion y todos sus bonos con 55% off, hasta el 27/11.</p>
       <p class="pay-once">Es un pago unico. Sin suscripcion, sin mensualidades y sin cobros todos los meses.</p>
     </div>
 
@@ -687,14 +692,14 @@ src="https://www.facebook.com/tr?id=1718157489881548&ev=PageView&noscript=1"
       <!-- BASICO (propositalmente mais discreto) -->
       <div class="plan basic">
         <h3>Plan Basico</h3>
-        <p class="intro">Para quien quiere los 101 modelos con costo y precio.</p>
-        <p class="from">De <s>US$ 19</s> por solo:</p>
+        <p class="intro">Para quien quiere los 101 modelos y la calculadora de precio.</p>
+        <p class="from">De <s>US$ 15,60</s> por solo: <span class="off">55% off</span></p>
         <div class="price"><span class="cur">US$</span><span class="amt">7</span></div>
         <p class="pay-label">Pago unico</p>
         <ul>
           <li>101 modelos nuevos de bolsos a crochet</li>
           <li>Paso a paso interactivo y facil de entender</li>
-          <li>Costo y precio sugerido de cada bolso</li>
+          <li>Calculadora de precio de venta</li>
           <li>Fotos, graficos, medidas y lista de materiales</li>
           <li>Acceso digital inmediato</li>
           <li>Acceso por 1 ano</li>
@@ -723,7 +728,7 @@ src="https://www.facebook.com/tr?id=1718157489881548&ev=PageView&noscript=1"
             <ul>
               <li>101 modelos nuevos de bolsos a crochet</li>
               <li>Paso a paso interactivo y facil de entender</li>
-              <li>Costo y precio sugerido de cada bolso</li>
+              <li>Calculadora de precio de venta</li>
               <li>Fotos, graficos, medidas y lista de materiales</li>
               <li>Acceso de por vida</li>
               <li>Bono 1: Guia de Materiales</li>
@@ -738,7 +743,7 @@ src="https://www.facebook.com/tr?id=1718157489881548&ev=PageView&noscript=1"
           <div class="vip-side">
             <img class="vip-mock" src="imagens/plano-completo.webp" alt="Plan VIP Completo con todos los bonos" width="520" height="520" loading="lazy">
             <p class="pay-label">Pago unico</p>
-            <p class="from">De <s>US$ 39</s> por solo:</p>
+            <p class="from">De <s>US$ 26,70</s> por solo: <span class="off">55% off</span></p>
             <div class="price"><span class="cur">US$</span><span class="amt">12</span></div>
             <p class="per-unit">Menos de 12 centavos por modelo nuevo.</p>
             <a href="#" class="btn btn-block" data-checkout="vip">Quiero el plan VIP completo</a>
@@ -759,7 +764,7 @@ src="https://www.facebook.com/tr?id=1718157489881548&ev=PageView&noscript=1"
     <p class="eyebrow">Sin riesgo</p>
     <h2 class="h2">Garantia de 30 Dias</h2>
     <div class="seal"><img src="imagens/selo-garantia-7-dias.webp" alt="Garantia de 30 dias"></div>
-    <p>Entra, recorre los 101 modelos y revisa las fichas de costo y precio con calma. Si en 30 dias sientes que la coleccion no te ahorro horas de busqueda, pides el reembolso y te devolvemos el 100% de tu dinero.</p>
+    <p>Entra, recorre los 101 modelos y prueba la calculadora de precio con calma. Si en 30 dias sientes que la coleccion no te ahorro horas de busqueda, pides el reembolso y te devolvemos el 100% de tu dinero.</p>
     <p><strong style="font-family:'Poppins',sans-serif;color:#4a3830">Sin riesgo para ti.</strong></p>
     <div class="btn-wrap" style="margin-top:28px"><a href="#planes" class="btn">Quiero acceder sin riesgo</a></div>
   </div>
@@ -768,11 +773,12 @@ src="https://www.facebook.com/tr?id=1718157489881548&ev=PageView&noscript=1"
 <!-- ===== URGENCIA ===== -->
 <section class="urgency">
   <div class="wrap-lg">
-    <p class="eyebrow">Condicion especial</p>
-    <h2 class="h2">Hoy Tienes Dos Opciones</h2>
-    <p>Seguir buscando cada semana que bolso nuevo ofrecer, o tener ahora 101 modelos listos para tejer y vender, con el precio especial y los bonos que terminan a medianoche.</p>
-    <p>Oferta disponible hasta hoy: <strong class="today poppins" style="color:#fff"></strong></p>
+    <p class="eyebrow">Black November</p>
+    <h2 class="h2">Tienes Dos Opciones</h2>
+    <p>Seguir buscando cada semana que bolso nuevo ofrecer, o tener ahora 101 modelos listos para tejer y vender, con el 55% off de Black November en toda la coleccion y sus bonos.</p>
+    <p>Oferta disponible hasta el <strong class="poppins" style="color:#fff">27/11</strong></p>
     <div class="timer">
+      <div><b id="t-d">00</b><span>Dias</span></div>
       <div><b id="t-h">00</b><span>Horas</span></div>
       <div><b id="t-m">00</b><span>Minutos</span></div>
       <div><b id="t-s">00</b><span>Segundos</span></div>
@@ -791,19 +797,19 @@ src="https://www.facebook.com/tr?id=1718157489881548&ev=PageView&noscript=1"
     <div class="faq-list">
       <div class="faq-item open">
         <button class="faq-q">Ya tejo y vendo hace tiempo. Esto es para mi?<span class="ico">-</span></button>
-        <div class="faq-a"><p>Si. Fue pensado justamente para ti, que ya dominas los puntos y necesitas modelos nuevos para no repetir tu catalogo. Cada uno trae costo y precio sugerido, asi ahorras tambien el tiempo de calcular. Y te unes a una comunidad de tejedoras que tejen y venden como tu.</p></div>
+        <div class="faq-a"><p>Si. Fue pensado justamente para ti, que ya dominas los puntos y necesitas modelos nuevos para no repetir tu catalogo. Y con la calculadora de precio sabes cuanto cobrar por cada uno sin hacer cuentas a mano. Y te unes a una comunidad de tejedoras que tejen y venden como tu.</p></div>
       </div>
       <div class="faq-item">
         <button class="faq-q">Y si recien empiezo a vender?<span class="ico">+</span></button>
-        <div class="faq-a"><p>Tambien sirve. El costo y el precio sugerido te dan una referencia clara desde tu primera venta. Lo ideal es que ya conozcas al menos los puntos basicos de crochet.</p></div>
+        <div class="faq-a"><p>Tambien sirve. La calculadora te da una referencia clara de cuanto cobrar desde tu primera venta. Lo ideal es que ya conozcas al menos los puntos basicos de crochet.</p></div>
       </div>
       <div class="faq-item">
         <button class="faq-q">Puedo vender los bolsos que haga?<span class="ico">+</span></button>
         <div class="faq-a"><p>Si. Puedes vender todas las piezas que tejas con los patrones. Lo que no esta permitido es revender o compartir el material digital.</p></div>
       </div>
       <div class="faq-item">
-        <button class="faq-q">El costo y el precio sirven para mi pais?<span class="ico">+</span></button>
-        <div class="faq-a"><p>Son una referencia. Como el valor del hilo y de los accesorios cambia en cada pais, ajusta los numeros con los precios de tu ciudad antes de definir el valor final.</p></div>
+        <button class="faq-q">La calculadora sirve para mi pais?<span class="ico">+</span></button>
+        <div class="faq-a"><p>Si. Eliges la moneda (hay pesos, soles, dolares y otras de America Latina) y pones lo que pagas por el hilo y los accesorios en tu ciudad, asi el precio sale con tus numeros reales.</p></div>
       </div>
       <div class="faq-item">
         <button class="faq-q">Como recibo el material?<span class="ico">+</span></button>
@@ -819,11 +825,11 @@ src="https://www.facebook.com/tr?id=1718157489881548&ev=PageView&noscript=1"
       </div>
       <div class="faq-item">
         <button class="faq-q">Que incluye el Plan Basico?<span class="ico">+</span></button>
-        <div class="faq-a"><p>Los 101 modelos con paso a paso interactivo, fotos, graficos, medidas, lista de materiales, costo y precio sugerido, con acceso por 1 ano.</p></div>
+        <div class="faq-a"><p>Los 101 modelos con paso a paso interactivo, fotos, graficos, medidas, lista de materiales y calculadora de precio, con acceso por 1 ano.</p></div>
       </div>
       <div class="faq-item">
         <button class="faq-q">Que incluye el Plan VIP Completo?<span class="ico">+</span></button>
-        <div class="faq-a"><p>Los 101 modelos con costo y precio sugerido, los 4 bonos exclusivos (Guia de Materiales, Tabla de Puntos y Medidas, Guia Premium de Asas, Correas y Herrajes y Video Clases de 12 Modelos Premium) y acceso de por vida.</p></div>
+        <div class="faq-a"><p>Los 101 modelos con calculadora de precio, los 4 bonos exclusivos (Guia de Materiales, Tabla de Puntos y Medidas, Guia Premium de Asas, Correas y Herrajes y Video Clases de 12 Modelos Premium) y acceso de por vida.</p></div>
       </div>
       <div class="faq-item">
         <button class="faq-q">El precio esta en dolares?<span class="ico">+</span></button>
@@ -845,11 +851,11 @@ src="https://www.facebook.com/tr?id=1718157489881548&ev=PageView&noscript=1"
     <div class="ph-frame">
       <img src="imagens/mockup-final-completo.webp" alt="Coleccion completa de 101 patrones de bolsos a crochet" width="520" height="520" loading="lazy">
     </div>
-    <p class="body">Deja de gastar buscando el tiempo que podrias usar para tejer y vender. Ten hoy 101 modelos de bolsos a crochet reunidos en un solo lugar, con paso a paso interactivo, costo y precio sugerido, para que siempre tengas novedad para tus clientas.</p>
+    <p class="body">Deja de gastar buscando el tiempo que podrias usar para tejer y vender. Ten hoy 101 modelos de bolsos a crochet reunidos en un solo lugar, con paso a paso interactivo y calculadora de precio, para que siempre tengas novedad para tus clientas.</p>
     <div class="checks-wrap">
       <ul class="checks">
         <li>101 modelos nuevos con paso a paso interactivo</li>
-        <li>Costo y precio sugerido de cada bolso</li>
+        <li>Calculadora de precio de venta</li>
         <li>Fotos, graficos y medidas</li>
         <li>Parte de una comunidad de tejedoras</li>
         <li>Bonos incluidos en el Plan VIP</li>
@@ -877,7 +883,7 @@ src="https://www.facebook.com/tr?id=1718157489881548&ev=PageView&noscript=1"
     <p class="eyebrow">Antes de continuar...</p>
     <p class="chose">Elegiste el Plan Basico de US$ 7.</p>
     <h3 id="upsell-title">Pero por solo US$ 2,90 mas, llevas el <em>VIP Completo</em>.</h3>
-    <p class="m-intro">Ademas de los 101 modelos con costo y precio, recibes:</p>
+    <p class="m-intro">Ademas de los 101 modelos y la calculadora de precio, recibes:</p>
     <ul>
       <li>Acceso de por vida (en vez de 1 ano)</li>
       <li>Guia de Materiales Para Bolsos</li>
@@ -887,8 +893,8 @@ src="https://www.facebook.com/tr?id=1718157489881548&ev=PageView&noscript=1"
     </ul>
     <div class="offer-box">
       <s>US$ 12</s>
-      <b>Hoy, US$ 9,90</b>
-      <small>Solo US$ 2,90 mas que el plan que elegiste.</small>
+      <b>US$ 9,90</b>
+      <small>Precio de Black November. Solo US$ 2,90 mas que el plan que elegiste.</small>
     </div>
     <a href="#" class="btn btn-block" data-checkout="vipOferta">Si, quiero el VIP Completo</a>
     <a href="#" class="decline" data-checkout="basico">no, quiero quedarme con el Plan Basico</a>
@@ -942,23 +948,18 @@ src="https://www.facebook.com/tr?id=1718157489881548&ev=PageView&noscript=1"
     document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && modal.classList.contains('open')) close(); });
   })();
 
-  // Data de hoje (dd/mm/aaaa)
-  (function(){
-    var d = new Date();
-    var p = function(n){ return String(n).padStart(2,'0'); };
-    var txt = p(d.getDate()) + '/' + p(d.getMonth()+1) + '/' + d.getFullYear();
-    document.querySelectorAll('.today').forEach(function(el){ el.textContent = txt; });
-    document.getElementById('year').textContent = d.getFullYear();
-  })();
+  // Ano do rodapé
+  document.getElementById('year').textContent = new Date().getFullYear();
 
-  // Contador até a meia-noite
+  // Contador até o fim da Black November (27/11, 23:59 no horário da pessoa)
   (function(){
-    var h = document.getElementById('t-h'), m = document.getElementById('t-m'), s = document.getElementById('t-s');
+    var d = document.getElementById('t-d'), h = document.getElementById('t-h'), m = document.getElementById('t-m'), s = document.getElementById('t-s');
     function tick(){
       var now = new Date();
-      var end = new Date(now); end.setHours(23,59,59,999);
+      var end = new Date(2026,10,27,23,59,59,999);
       var diff = Math.max(0, Math.floor((end - now) / 1000));
-      h.textContent = String(Math.floor(diff / 3600)).padStart(2,'0');
+      d.textContent = String(Math.floor(diff / 86400)).padStart(2,'0');
+      h.textContent = String(Math.floor(diff % 86400 / 3600)).padStart(2,'0');
       m.textContent = String(Math.floor(diff % 3600 / 60)).padStart(2,'0');
       s.textContent = String(diff % 60).padStart(2,'0');
     }
