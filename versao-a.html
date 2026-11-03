@@ -207,7 +207,7 @@
   .plan ul li::before{content:"\2713";position:absolute;left:0;top:1px;width:21px;height:21px;border-radius:50%;border:1.5px solid #c9b6a4;color:#8a7566;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center}
   .from{font-family:'Poppins',sans-serif;font-weight:700;color:#5b4a40;font-size:15px}
   .from s{color:var(--terra);font-weight:800}
-  .off{display:inline-block;background:var(--terra);color:#fff;font-size:12px;font-weight:800;border-radius:999px;padding:2px 9px;margin-left:4px;white-space:nowrap}
+  .bf-tag{display:inline-block;background:var(--terra);color:#fff;font-family:'Poppins',sans-serif;font-size:12px;font-weight:800;line-height:1.3;border-radius:10px;padding:4px 10px;margin-bottom:8px}
   .price{display:flex;align-items:flex-end;gap:8px;margin:2px 0 4px}
   .price .cur{font-family:'Poppins',sans-serif;font-weight:900;color:var(--gold);font-size:36px;line-height:1.6}
   .price .amt{font-family:'Poppins',sans-serif;font-weight:900;color:var(--terra);font-size:84px;line-height:1;letter-spacing:-.04em}
@@ -266,6 +266,12 @@
   .modal .btn{animation:none}
   .decline{display:block;text-align:center;margin-top:16px;color:#cdbcae;font-size:14.5px;text-decoration:underline;text-underline-offset:3px}
   .decline:hover{color:#fff}
+
+  /* ---------- Demo video ---------- */
+  .demo-video{position:relative;width:100%;max-width:340px;margin:26px auto 30px;border-radius:24px;overflow:hidden;background:var(--dark);box-shadow:0 18px 40px rgba(80,40,20,.18)}
+  .demo-video video{display:block;width:100%;height:auto;aspect-ratio:9/16}
+  .demo-play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:78px;height:78px;border:0;border-radius:50%;background:var(--terra);color:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 10px 26px rgba(0,0,0,.35)}
+  .demo-play[hidden]{display:none}
 
   /* ---------- Guarantee ---------- */
   .guarantee{background:linear-gradient(180deg,#f7ece0 0%,#efd8bf 100%)}
@@ -393,7 +399,7 @@ src="https://www.facebook.com/tr?id=1718157489881548&ev=PageView&noscript=1"
 <body>
 
 <!-- ===== TOPBAR ===== -->
-<div class="topbar">Black November: 55% off hasta el 27/11</div>
+<div class="topbar">Black Friday: 55% de descuento hasta el 27/11</div>
 
 <!-- ===== HERO ===== -->
 <section class="dark hero">
@@ -420,7 +426,7 @@ src="https://www.facebook.com/tr?id=1718157489881548&ev=PageView&noscript=1"
       <div class="sc-card sc-out r"><img src="imagens/bolsas/bolsa-14.webp" alt="Bolso cruzado a crochet"><span>Bolso cruzado</span></div>
     </div>
 
-    <a href="#planes" class="btn btn-hero">Quiero los 101 modelos por US$ 7</a>
+    <a href="#video" class="btn btn-hero">Quiero los 101 modelos por US$ 7</a>
     <p class="hero-micro">Acceso inmediato en tu email · Celular, tablet o PC · Pago unico</p>
   </div>
 </section>
@@ -448,7 +454,7 @@ src="https://www.facebook.com/tr?id=1718157489881548&ev=PageView&noscript=1"
       </div>
     </div>
 
-    <div class="btn-wrap"><a href="#planes" class="btn">Quiero los 101 modelos nuevos</a></div>
+    <div class="btn-wrap"><a href="#video" class="btn">Quiero los 101 modelos nuevos</a></div>
   </div>
 </section>
 
@@ -476,7 +482,7 @@ src="https://www.facebook.com/tr?id=1718157489881548&ev=PageView&noscript=1"
     <p>Con esta coleccion tienes todo reunido en un solo lugar: 101 modelos nuevos, con paso a paso interactivo, lista de materiales y calculadora de precio. Eliges el bolso, pones lo que te cuestan los materiales y tus horas, y sabes cuanto cobrar antes de empezar.</p>
     <p>Y no vendes sola: pasas a formar parte de una comunidad de tejedoras que tambien venden lo que tejen y hoy comparten sus bolsos terminados en lugar de sus busquedas.</p>
 
-    <div class="btn-wrap" style="margin-top:28px"><a href="#planes" class="btn">Quiero dejar de buscar modelos</a></div>
+    <div class="btn-wrap" style="margin-top:28px"><a href="#video" class="btn">Quiero dejar de buscar modelos</a></div>
   </div>
 </section>
 
@@ -593,7 +599,7 @@ src="https://www.facebook.com/tr?id=1718157489881548&ev=PageView&noscript=1"
       </div>
     </div>
 
-    <div class="btn-wrap"><a href="#planes" class="btn">Quiero los 101 modelos para vender</a></div>
+    <div class="btn-wrap"><a href="#video" class="btn">Quiero los 101 modelos para vender</a></div>
   </div>
 </section>
 
@@ -601,7 +607,7 @@ src="https://www.facebook.com/tr?id=1718157489881548&ev=PageView&noscript=1"
 <section class="dark center">
   <div class="wrap-lg">
     <p class="eyebrow">Bonos exclusivos</p>
-    <h2 class="h2" style="max-width:800px;margin-left:auto;margin-right:auto">Y en Black November Tambien Recibes Estos Bonos Exclusivos en el Plan VIP</h2>
+    <h2 class="h2" style="max-width:800px;margin-left:auto;margin-right:auto">Y en Black Friday Tambien Recibes Estos Bonos Exclusivos en el Plan VIP</h2>
     <p class="lead" style="color:#f2e6da">Para que cada bolso que vendas salga con terminacion de tienda y lo puedas cobrar como tal.</p>
 
     <div class="bonus-grid">
@@ -677,14 +683,28 @@ src="https://www.facebook.com/tr?id=1718157489881548&ev=PageView&noscript=1"
   </div>
 </section>
 
+<!-- ===== VIDEO DE DEMONSTRACAO ===== -->
+<section class="center" id="video" style="background:var(--cream)">
+  <div class="wrap-lg">
+    <p class="eyebrow">Mira por dentro</p>
+    <h2 class="h2">Mira Todo Lo Que Hay Adentro</h2>
+    <p class="lead">En menos de un minuto ves como eliges un modelo, como sigues el paso a paso y como queda todo listo para empezar a tejer.</p>
+    <div class="demo-video">
+      <video id="demo" src="videos/demo-hilo.mp4" poster="videos/demo-hilo-capa.webp" width="720" height="1280" controls controlsList="nodownload noplaybackrate" disablePictureInPicture preload="none" playsinline aria-label="Demostracion de los 101 modelos de bolsos a crochet por dentro"></video>
+      <button type="button" class="demo-play" id="demo-play" hidden aria-label="Reproducir el video"><svg viewBox="0 0 24 24" width="34" height="34" aria-hidden="true"><path fill="currentColor" d="M8 5.5v13a1 1 0 0 0 1.5.86l11-6.5a1 1 0 0 0 0-1.72l-11-6.5A1 1 0 0 0 8 5.5z"/></svg></button>
+    </div>
+    <div class="btn-wrap"><a href="#planes" class="btn">Quiero mis 101 modelos</a></div>
+  </div>
+</section>
+
 <!-- ===== PLANES ===== -->
 <section class="pricing" id="planes">
   <div class="wrap-lg">
     <div class="center">
-      <p class="eyebrow">Black November</p>
+      <p class="eyebrow">Black Friday</p>
       <h2 class="h2">Elige Tu Mejor Opcion</h2>
       <p class="lead" style="max-width:720px">Los dos planes traen los 101 modelos y la calculadora de precio para que nunca te falte novedad. El VIP suma los 4 bonos y el acceso de por vida.</p>
-      <p class="bf-note">Solo por Black November, dejamos toda la coleccion y todos sus bonos con 55% off, hasta el 27/11.</p>
+      <p class="bf-note">Solo por Black Friday, dejamos toda la coleccion y todos sus bonos con 55% de descuento, hasta el 27/11.</p>
       <p class="pay-once">Es un pago unico. Sin suscripcion, sin mensualidades y sin cobros todos los meses.</p>
     </div>
 
@@ -693,7 +713,8 @@ src="https://www.facebook.com/tr?id=1718157489881548&ev=PageView&noscript=1"
       <div class="plan basic">
         <h3>Plan Basico</h3>
         <p class="intro">Para quien quiere los 101 modelos y la calculadora de precio.</p>
-        <p class="from">De <s>US$ 15,60</s> por solo: <span class="off">55% off</span></p>
+        <p class="bf-tag">Black Friday: 55% de descuento</p>
+        <p class="from">De <s>US$ 15,60</s> por solo:</p>
         <div class="price"><span class="cur">US$</span><span class="amt">7</span></div>
         <p class="pay-label">Pago unico</p>
         <ul>
@@ -743,7 +764,8 @@ src="https://www.facebook.com/tr?id=1718157489881548&ev=PageView&noscript=1"
           <div class="vip-side">
             <img class="vip-mock" src="imagens/plano-completo.webp" alt="Plan VIP Completo con todos los bonos" width="520" height="520" loading="lazy">
             <p class="pay-label">Pago unico</p>
-            <p class="from">De <s>US$ 26,70</s> por solo: <span class="off">55% off</span></p>
+            <p class="bf-tag">Black Friday: 55% de descuento</p>
+            <p class="from">De <s>US$ 26,70</s> por solo:</p>
             <div class="price"><span class="cur">US$</span><span class="amt">12</span></div>
             <p class="per-unit">Menos de 12 centavos por modelo nuevo.</p>
             <a href="#" class="btn btn-block" data-checkout="vip">Quiero el plan VIP completo</a>
@@ -766,16 +788,16 @@ src="https://www.facebook.com/tr?id=1718157489881548&ev=PageView&noscript=1"
     <div class="seal"><img src="imagens/selo-garantia-7-dias.webp" alt="Garantia de 30 dias"></div>
     <p>Entra, recorre los 101 modelos y prueba la calculadora de precio con calma. Si en 30 dias sientes que la coleccion no te ahorro horas de busqueda, pides el reembolso y te devolvemos el 100% de tu dinero.</p>
     <p><strong style="font-family:'Poppins',sans-serif;color:#4a3830">Sin riesgo para ti.</strong></p>
-    <div class="btn-wrap" style="margin-top:28px"><a href="#planes" class="btn">Quiero acceder sin riesgo</a></div>
+    <div class="btn-wrap" style="margin-top:28px"><a href="#video" class="btn">Quiero acceder sin riesgo</a></div>
   </div>
 </section>
 
 <!-- ===== URGENCIA ===== -->
 <section class="urgency">
   <div class="wrap-lg">
-    <p class="eyebrow">Black November</p>
+    <p class="eyebrow">Black Friday</p>
     <h2 class="h2">Tienes Dos Opciones</h2>
-    <p>Seguir buscando cada semana que bolso nuevo ofrecer, o tener ahora 101 modelos listos para tejer y vender, con el 55% off de Black November en toda la coleccion y sus bonos.</p>
+    <p>Seguir buscando cada semana que bolso nuevo ofrecer, o tener ahora 101 modelos listos para tejer y vender, con el 55% de descuento de Black Friday en toda la coleccion y sus bonos.</p>
     <p>Oferta disponible hasta el <strong class="poppins" style="color:#fff">27/11</strong></p>
     <div class="timer">
       <div><b id="t-d">00</b><span>Dias</span></div>
@@ -783,7 +805,7 @@ src="https://www.facebook.com/tr?id=1718157489881548&ev=PageView&noscript=1"
       <div><b id="t-m">00</b><span>Minutos</span></div>
       <div><b id="t-s">00</b><span>Segundos</span></div>
     </div>
-    <a href="#planes" class="btn">Quiero mis 101 modelos hoy</a>
+    <a href="#video" class="btn">Quiero mis 101 modelos hoy</a>
   </div>
 </section>
 
@@ -862,7 +884,7 @@ src="https://www.facebook.com/tr?id=1718157489881548&ev=PageView&noscript=1"
         <li>Garantia de 30 dias</li>
       </ul>
     </div>
-    <div class="btn-wrap"><a href="#planes" class="btn">Si, quiero mis 101 modelos para vender</a></div>
+    <div class="btn-wrap"><a href="#video" class="btn">Si, quiero mis 101 modelos para vender</a></div>
   </div>
   <footer>
     <div class="brand foot-brand">
@@ -894,7 +916,7 @@ src="https://www.facebook.com/tr?id=1718157489881548&ev=PageView&noscript=1"
     <div class="offer-box">
       <s>US$ 12</s>
       <b>US$ 9,90</b>
-      <small>Precio de Black November. Solo US$ 2,90 mas que el plan que elegiste.</small>
+      <small>Precio de Black Friday. Solo US$ 2,90 mas que el plan que elegiste.</small>
     </div>
     <a href="#" class="btn btn-block" data-checkout="vipOferta">Si, quiero el VIP Completo</a>
     <a href="#" class="decline" data-checkout="basico">no, quiero quedarme con el Plan Basico</a>
@@ -951,7 +973,7 @@ src="https://www.facebook.com/tr?id=1718157489881548&ev=PageView&noscript=1"
   // Ano do rodapé
   document.getElementById('year').textContent = new Date().getFullYear();
 
-  // Contador até o fim da Black November (27/11, 23:59 no horário da pessoa)
+  // Contador até o fim da Black Friday (27/11, 23:59 no horário da pessoa)
   (function(){
     var d = document.getElementById('t-d'), h = document.getElementById('t-h'), m = document.getElementById('t-m'), s = document.getElementById('t-s');
     function tick(){
@@ -964,6 +986,19 @@ src="https://www.facebook.com/tr?id=1718157489881548&ev=PageView&noscript=1"
       s.textContent = String(diff % 60).padStart(2,'0');
     }
     tick(); setInterval(tick, 1000);
+  })();
+
+  // Video de demonstração: a capa com o botão aparece até a pessoa dar play
+  (function(){
+    var v = document.getElementById('demo'), b = document.getElementById('demo-play');
+    v.controls = false;
+    b.hidden = false;
+    v.parentNode.addEventListener('contextmenu', function(e){ e.preventDefault(); });
+    b.addEventListener('click', function(){
+      b.hidden = true;
+      v.controls = true;
+      v.play();
+    });
   })();
 
   // FAQ
