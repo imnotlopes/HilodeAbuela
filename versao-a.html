@@ -196,7 +196,6 @@
 
   /* ---------- Pricing ---------- */
   .pricing{background:linear-gradient(180deg,var(--cream) 0%,#f3e2cd 100%)}
-  .bf-note{font-family:'Poppins',sans-serif;font-weight:700;font-size:15px;color:var(--terra);margin-top:10px}
   .pay-once{font-size:15px;font-weight:600;color:#7a5a48;margin-top:8px}
   .plans{display:grid;grid-template-columns:1fr 1.95fr;gap:28px;max-width:1120px;margin:56px auto 0;align-items:stretch}
   .plan{position:relative;border-radius:26px;padding:28px 24px 30px}
@@ -207,7 +206,6 @@
   .plan ul li::before{content:"\2713";position:absolute;left:0;top:1px;width:21px;height:21px;border-radius:50%;border:1.5px solid #c9b6a4;color:#8a7566;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center}
   .from{font-family:'Poppins',sans-serif;font-weight:700;color:#5b4a40;font-size:15px}
   .from s{color:var(--terra);font-weight:800}
-  .bf-tag{display:inline-block;background:var(--terra);color:#fff;font-family:'Poppins',sans-serif;font-size:12px;font-weight:800;line-height:1.3;border-radius:10px;padding:4px 10px;margin-bottom:8px}
   .price{display:flex;align-items:flex-end;gap:8px;margin:2px 0 4px}
   .price .cur{font-family:'Poppins',sans-serif;font-weight:900;color:var(--gold);font-size:36px;line-height:1.6}
   .price .amt{font-family:'Poppins',sans-serif;font-weight:900;color:var(--terra);font-size:84px;line-height:1;letter-spacing:-.04em}
@@ -285,7 +283,7 @@
   .urgency h2{color:#fff8ef}
   .urgency p{font-size:17px;margin-bottom:14px}
   .timer{display:flex;justify-content:center;gap:10px;margin:26px 0 40px}
-  .timer div{background:var(--cream-2);border-radius:14px;width:80px;padding:12px 0 10px;box-shadow:0 10px 24px rgba(0,0,0,.15)}
+  .timer div{background:var(--cream-2);border-radius:14px;width:88px;padding:12px 0 10px;box-shadow:0 10px 24px rgba(0,0,0,.15)}
   .timer b{display:block;font-family:'Poppins',sans-serif;font-weight:900;font-size:34px;color:var(--ink);line-height:1.1}
   .timer span{font-family:'Poppins',sans-serif;font-weight:700;font-size:11px;color:#5b4a40;text-transform:uppercase}
 
@@ -354,9 +352,7 @@
   }
   @media (max-width:520px){
     .steps{grid-template-columns:1fr}
-    .timer{gap:8px}
-    .timer div{width:70px}
-    .timer b{font-size:28px}
+    .timer div{width:80px}
   }
 </style>
 <!-- Meta Pixel Code -->
@@ -399,7 +395,7 @@ src="https://www.facebook.com/tr?id=1718157489881548&ev=PageView&noscript=1"
 <body>
 
 <!-- ===== TOPBAR ===== -->
-<div class="topbar">Black Friday: 55% de descuento hasta el 27/11</div>
+<div class="topbar">Oferta valida solo por hoy - <span class="today"></span></div>
 
 <!-- ===== HERO ===== -->
 <section class="dark hero">
@@ -607,7 +603,7 @@ src="https://www.facebook.com/tr?id=1718157489881548&ev=PageView&noscript=1"
 <section class="dark center">
   <div class="wrap-lg">
     <p class="eyebrow">Bonos exclusivos</p>
-    <h2 class="h2" style="max-width:800px;margin-left:auto;margin-right:auto">Y en Black Friday Tambien Recibes Estos Bonos Exclusivos en el Plan VIP</h2>
+    <h2 class="h2" style="max-width:800px;margin-left:auto;margin-right:auto">Y Hoy Tambien Recibes Estos Bonos Exclusivos en el Plan VIP</h2>
     <p class="lead" style="color:#f2e6da">Para que cada bolso que vendas salga con terminacion de tienda y lo puedas cobrar como tal.</p>
 
     <div class="bonus-grid">
@@ -701,10 +697,9 @@ src="https://www.facebook.com/tr?id=1718157489881548&ev=PageView&noscript=1"
 <section class="pricing" id="planes">
   <div class="wrap-lg">
     <div class="center">
-      <p class="eyebrow">Black Friday</p>
+      <p class="eyebrow">Escoge tu mejor opcion</p>
       <h2 class="h2">Elige Tu Mejor Opcion</h2>
       <p class="lead" style="max-width:720px">Los dos planes traen los 101 modelos y la calculadora de precio para que nunca te falte novedad. El VIP suma los 4 bonos y el acceso de por vida.</p>
-      <p class="bf-note">Solo por Black Friday, dejamos toda la coleccion y todos sus bonos con 55% de descuento, hasta el 27/11.</p>
       <p class="pay-once">Es un pago unico. Sin suscripcion, sin mensualidades y sin cobros todos los meses.</p>
     </div>
 
@@ -713,8 +708,7 @@ src="https://www.facebook.com/tr?id=1718157489881548&ev=PageView&noscript=1"
       <div class="plan basic">
         <h3>Plan Basico</h3>
         <p class="intro">Para quien quiere los 101 modelos y la calculadora de precio.</p>
-        <p class="bf-tag">Black Friday: 55% de descuento</p>
-        <p class="from">De <s>US$ 15,60</s> por solo:</p>
+        <p class="from">De <s>US$ 19</s> por solo:</p>
         <div class="price"><span class="cur">US$</span><span class="amt">7</span></div>
         <p class="pay-label">Pago unico</p>
         <ul>
@@ -764,8 +758,7 @@ src="https://www.facebook.com/tr?id=1718157489881548&ev=PageView&noscript=1"
           <div class="vip-side">
             <img class="vip-mock" src="imagens/plano-completo.webp" alt="Plan VIP Completo: 101 modelos con paso a paso interactivo" width="520" height="520" loading="lazy">
             <p class="pay-label">Pago unico</p>
-            <p class="bf-tag">Black Friday: 55% de descuento</p>
-            <p class="from">De <s>US$ 26,70</s> por solo:</p>
+            <p class="from">De <s>US$ 39</s> por solo:</p>
             <div class="price"><span class="cur">US$</span><span class="amt">12</span></div>
             <p class="per-unit">Menos de 12 centavos por modelo nuevo.</p>
             <a href="#" class="btn btn-block" data-checkout="vip">Quiero el plan VIP completo</a>
@@ -795,12 +788,11 @@ src="https://www.facebook.com/tr?id=1718157489881548&ev=PageView&noscript=1"
 <!-- ===== URGENCIA ===== -->
 <section class="urgency">
   <div class="wrap-lg">
-    <p class="eyebrow">Black Friday</p>
-    <h2 class="h2">Tienes Dos Opciones</h2>
-    <p>Seguir buscando cada semana que bolso nuevo ofrecer, o tener ahora 101 modelos listos para tejer y vender, con el 55% de descuento de Black Friday en toda la coleccion y sus bonos.</p>
-    <p>Oferta disponible hasta el <strong class="poppins" style="color:#fff">27/11</strong></p>
+    <p class="eyebrow">Condicion especial</p>
+    <h2 class="h2">Hoy Tienes Dos Opciones</h2>
+    <p>Seguir buscando cada semana que bolso nuevo ofrecer, o tener ahora 101 modelos listos para tejer y vender, con el precio especial y los bonos que terminan a medianoche.</p>
+    <p>Oferta disponible hasta hoy: <strong class="today poppins" style="color:#fff"></strong></p>
     <div class="timer">
-      <div><b id="t-d">00</b><span>Dias</span></div>
       <div><b id="t-h">00</b><span>Horas</span></div>
       <div><b id="t-m">00</b><span>Minutos</span></div>
       <div><b id="t-s">00</b><span>Segundos</span></div>
@@ -915,8 +907,8 @@ src="https://www.facebook.com/tr?id=1718157489881548&ev=PageView&noscript=1"
     </ul>
     <div class="offer-box">
       <s>US$ 12</s>
-      <b>US$ 9,90</b>
-      <small>Precio de Black Friday. Solo US$ 2,90 mas que el plan que elegiste.</small>
+      <b>Hoy, US$ 9,90</b>
+      <small>Solo US$ 2,90 mas que el plan que elegiste.</small>
     </div>
     <a href="#" class="btn btn-block" data-checkout="vipOferta">Si, quiero el VIP Completo</a>
     <a href="#" class="decline" data-checkout="basico">no, quiero quedarme con el Plan Basico</a>
@@ -970,18 +962,23 @@ src="https://www.facebook.com/tr?id=1718157489881548&ev=PageView&noscript=1"
     document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && modal.classList.contains('open')) close(); });
   })();
 
-  // Ano do rodapé
-  document.getElementById('year').textContent = new Date().getFullYear();
-
-  // Contador até o fim da Black Friday (27/11, 23:59 no horário da pessoa)
+  // Data de hoje (dd/mm/aaaa)
   (function(){
-    var d = document.getElementById('t-d'), h = document.getElementById('t-h'), m = document.getElementById('t-m'), s = document.getElementById('t-s');
+    var d = new Date();
+    var p = function(n){ return String(n).padStart(2,'0'); };
+    var txt = p(d.getDate()) + '/' + p(d.getMonth()+1) + '/' + d.getFullYear();
+    document.querySelectorAll('.today').forEach(function(el){ el.textContent = txt; });
+    document.getElementById('year').textContent = d.getFullYear();
+  })();
+
+  // Contador até a meia-noite
+  (function(){
+    var h = document.getElementById('t-h'), m = document.getElementById('t-m'), s = document.getElementById('t-s');
     function tick(){
       var now = new Date();
-      var end = new Date(2026,10,27,23,59,59,999);
+      var end = new Date(now); end.setHours(23,59,59,999);
       var diff = Math.max(0, Math.floor((end - now) / 1000));
-      d.textContent = String(Math.floor(diff / 86400)).padStart(2,'0');
-      h.textContent = String(Math.floor(diff % 86400 / 3600)).padStart(2,'0');
+      h.textContent = String(Math.floor(diff / 3600)).padStart(2,'0');
       m.textContent = String(Math.floor(diff % 3600 / 60)).padStart(2,'0');
       s.textContent = String(diff % 60).padStart(2,'0');
     }
